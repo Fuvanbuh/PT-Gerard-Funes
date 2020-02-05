@@ -1,0 +1,276 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+  	outline: none;
+    background-color: #FAFAFA;
+    
+}
+
+
+
+.menu{
+	background-color: #C6DDE3;
+	box-shadow: 0px 2px 4px rgba(142, 142, 142, 0.25);
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.img-burguer{
+	width: 30px;
+	height: auto;
+	background-color: #C6DDE3;
+	box-shadow: none;
+}
+
+.img-nakima-icon{
+	width: 40%;
+	height: auto;
+	box-shadow: none;
+	margin:auto;
+}
+
+
+
+.breadcrumps{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px  rgba(216, 216, 216, 0.25);
+  padding: 15px;
+  
+}
+.breadcrumps a {
+  text-decoration: none;
+  background-color: #FFFFFF;
+  box-shadow: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.breadcrumps span{
+  box-shadow: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  background-color: #FFFFFF;
+}
+
+.breadcrumps :last-child{
+  color: #C6DDE3
+}
+
+
+
+.section-pregunta{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.cont-pregunta{
+  width: 80%;
+  z-index: 1;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(84, 84, 84, 0.25);
+  border: 1px solid #F4F4F4;
+}
+.cont-pregunta span {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Roboto', light;
+  font-size: 11px;
+}
+.cont-pregunta div h3{
+  font-family: 'Roboto', Medium;
+  font-size: 13px;
+}
+.usuario-nakima {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2px;
+  
+  font-size: 13px;
+}
+
+.cont-pregunta div p {
+  font-family: 'Roboto','Regular';
+  font-size: 13px;
+
+}
+
+.img-perfil{
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  margin-right: 10px;
+  border-radius: 200px;
+  justify-content: flex-start;
+
+}
+.usuario-nakima p{
+  font-family: 'Roboto', light;
+  font-style: italic;
+}
+
+.info-pregunta{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; 
+  padding: 5px;
+  margin-top: 20px;
+  font-family: 'Roboto','Regular';
+  font-size: 11px;
+}
+
+
+.info-pregunta div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.info-pregunta div img {
+  width: 15px;
+  height: 13px;
+  margin-right: 4px;
+}
+.info-pregunta div span{
+  font-family: 'Roboto','Regular';
+  font-size: 11px;
+}
+
+.pages-pregunta{
+  color: #C6DDE3;
+  font-family: 'Roboto','Regular';
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.nav {
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  background: #28dde0;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 100vh;
+  left: -50rem;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 30%;
+  
+}
+
+.nav.expanded { left: 0; }
+
+.nav ul {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  left: 2rem;
+  position: fixed;
+  top: 2rem;
+  width: 3.6rem;
+  
+}
+
+.nav-toggle:hover { opacity: 0.8; }
+
+.nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: white;
+  content: '';
+  height: 0.4rem;
+  width: 40%;
+}
+
+.nav-toggle .nav-toggle-bar { margin-top: 0; }
+
+.nav-toggle .nav-toggle-bar::after { margin-top: 0.8rem; }
+
+.nav-toggle .nav-toggle-bar::before { margin-top: -0.8rem; }
+
+.nav-toggle.expanded .nav-toggle-bar { background: transparent; }
+
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+  background: white;
+  margin-top: 0;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+} */
+
+
+
