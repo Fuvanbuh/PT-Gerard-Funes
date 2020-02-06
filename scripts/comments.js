@@ -24,8 +24,8 @@ function add(event) {
 function quit() {
     const bottonHidden = document.getElementById('hidden-comment')
     bottonHidden.addEventListener('click', hidden)
-
 }
+
 function send() {
     const bottonHidden = document.getElementById('send-comment')
     bottonHidden.addEventListener('click', hidden)
