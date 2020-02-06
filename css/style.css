@@ -221,6 +221,9 @@
   .pages-pregunta{
     font-size: 20px;
   }
+  .numero-pages img {
+    margin-left: 0px;
+  }
 }
 
 .add-respuesta {
@@ -240,6 +243,61 @@
   font-size: 15px;
   color: rgb(196, 235, 245);
 }
+.section.main{
+  z-index: 0;
+  
+}
+#ventana-comentario {
+  z-index: 100000;
+  width: 90%;
+  
+  border:  1px solid #F4F4F4;
+  position: absolute;
+  left: 5%;
+  background-color:#FFFFFF;
+}
+#ventana-comentario div {
+  display: flex;
+  justify-content: flex-end;
+  font-family: ' Roboto', Italic, 14;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+}
+#ventana-comentario div button {
+  background-color: #FFFFFF;
+}
+
+#ventana-comentario input {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  margin-top: 15px;
+  border: 1px solid #D1D1D1;
+  margin-bottom: 70px;
+  text-align: initial;
+  
+}
+
+.button-add-comment {
+  width: max-content;
+  position: absolute;
+  right: 4%;
+  bottom: 3%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #A7BEC5;
+  padding: 5px;
+  font-family:  'Roboto', Medium, 13, #A7BEC5;
+}
+
+.button-add-comment button{
+ color: #A7BEC5; 
+ margin-right: 5px;
+}
+
+
 
 .section-respuesta {
   border-bottom: 1px solid rgb(209, 208, 208);
@@ -280,6 +338,9 @@
 }
 .info-respuesta div {
   margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .info-respuesta img {
@@ -318,6 +379,14 @@
   
   .container-respuesta p {
     font-size: 17px;
+  }
+  #ventana-comentario {
+    z-index: 100000;
+    width: 40%;
+    border:  1px solid #F4F4F4;
+    position: absolute;
+    left: 30%;
+    background-color:#FFFFFF;
   }
 
 }
@@ -406,45 +475,40 @@ footer{
   background-color: #C6DDE3;
 }
 .hidden-version-mobile{
-  z-index: -100000;
+  display: none !important;
 }
+.hidden-version-desktop {
+  display: inline !important;
+}
+
+
 
 @media (min-width: 730px ) {
 
   footer{
     font-size: 16px;
+    display: flex;
+    flex-direction: row-reverse;
   }
   .section-footer {
      background-color: #C6DDE3 !important;
      display: flex;
      flex-direction: row;
      width: 90%;
-     
   }
   
   .section-footer div {
     background-color: #C6DDE3;
+    width: 33%;
     
   }
   .cont-footer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: unset;
     border-bottom: none;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    
-  }
-  
-  .section-footer div img {
-    visibility: hidden;
-  }
-  
-  .section-footer ul {
-    background-color: #C6DDE3;
-    margin: 40px 0;
-    display: flex;
-    flex-flow: column wrap;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   
   .section-footer ul li  {
@@ -470,12 +534,51 @@ footer{
     background-color: #C6DDE3;
   }
   .hidden-version-mobile{
-    z-index: 0;
-    
+    display: inline !important;
+  }
+  .hidden-version-desktop {
+    display: none !important;
+
+  }
+  .contacto-nakima{
+    margin: 20px 0;
+    }
+
+  .mail-nakima{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .mail-nakima img{
+    margin: 10px 5px;
+    margin-left: 0px;
+    height: 10px;
   }
 }
 
-
+#contenedor {
+  position: relative;
+  }
+  .miniatura{
+  z-index: 1001;
+  text-decoration: none;
+  }
+  .miniatura img {
+  border: 0px;
+  }
+  .miniatura span {
+  position: absolute;
+  text-decoration: none;
+  visibility: hidden;
+  border: 0px;
+  top:0px;
+  left:0px;
+  }
+  .miniatura:hover span {
+  visibility: visible;
+  overflow:visible;
+  z-index: 1002;
+  }
 
 
 
