@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -27,9 +29,17 @@
 
 
   <div class="menu">
-    <img class='img-burguer' src="images/imagesMobile/Component 7.png" alt="Burguer menu">
     <img class="img-nakima-icon" src="images/imagesMobile/image 4.png" alt="Nakima icon">
-    <section class="section-breadcrumps">
+    <div class="header-desktop hidden-version-mobile">
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+      </ul>
+    </div>
   </div>
   <div class="breadcrumps">
     <a href="">Elemento 1 </a>
@@ -38,184 +48,202 @@
     <span>></span>
     <a href="">Esquiades Nakima</a>
   </div>
-  <section class="section-pregunta">
-  </section>
-  <div class="cont-pregunta">
-    <span>28/1/2020</span>
-    <div>
-      <h3>Cuando se hara la esquiada de Nakima?</h3>
-      <div class="usuario-nakima-pregunta">
-        <img class="img-perfil" src="images/imagesDesktop/belleza-trucos-salir-guapa-fotos-848x477x80xX.jpg"
-          alt="imagen de perfil">
-        <p>Emma Nakima UX UI Designer</p>
+  <main class="container-main">
+    <section class="left-menu hidden-version-mobile">
+      <div><span>GENERAL</span><img src="images/imagesDesktop/Vector.png" alt="felcha hacia abajo"></div>
+      <div><span>PRODUCCIÓN</span><img src="images/imagesDesktop/Vector.png" alt="felcha hacia abajo"></div>
+      <div><span>VENTAS</span><img src="images/imagesDesktop/Vector.png" alt="felcha hacia abajo"></div>
+      <div><span>DISEÑO</span><img src="images/imagesDesktop/Vector.png" alt="felcha hacia abajo"></div>
+      <div class="dropdown"><span>CODE</span><img src="images/imagesDesktop/Vector.png" alt="felcha hacia abajo"></div>
+      <div><span>ADMINISTRACIÓN</span><img src="images/imagesDesktop/Vector.png" alt="felcha hacia abajo"></div>
+      <div class="container-calendario">
+        <span class="container-degradado">CALENDARIO NAKIMA</span>
+        <div class="evento"><img src="images/imagesDesktop/Ellipse 5.png" alt="Ellipse">25 / 6 / 2020 - Comida de
+          empresa Nakima</div>
+        <span class="evento-off">No hay más eventos disponibles</span>
       </div>
-      <p>En la retospectova de hoy se han propuesto por segunda y ultima vez hacer una esquiada con los participantes
-        de
-        Nakima.breadcrumps
-        Se proponen dos opciones posibles, Andorra y Port Ainé.
-        El finde deberá ser discutido para ver cual es el finde que todos pueden.
-      </p>
-    </div>
-    <div class="info-pregunta">
-      <div class="visualizaciones">
-        <div id="contenedor">
-          <a class="miniatura" href="javascript:void(0);">
-            <img alt="" src="images/imagesDesktop/Component 1.png" />
-            <span><img alt="" src="images/imagesDesktop/visualizaciones.png" /></span>
-          </a>
-        </div>
-        <span>10 Visualizaciones</span>
-      </div>
-      <div class="hidden-version-mobile">
-        <img src="images/imagesDesktop/Component 3.png" alt="componente 3">
-        <span>6 respuestas</span>
-      </div>
-      <div>
-        <div id="contenedor">
-          <a class="miniatura" href="javascript:void(0);">
-            <img alt="" src="images/imagesDesktop/Vector-1.png" />
-            <span><img alt="" src="images/imagesDesktop/like.png" /></span>
-          </a>
-        </div>
-        <span>32</span>
-      </div>
-      <div>
-        <div id="contenedor">
-          <a class="miniatura" href="javascript:void(0);">
-            <img alt="" src="images/imagesDesktop/Vector-2.png" />
-            <span><img alt="" src="images/imagesDesktop/dislike.png" /></span>
-          </a>
-        </div>
-        <span>10</span>
-      </div>
-      <div class="numero-pages">
-        <span class="pages-pregunta">1</span>
-        <span>/5</span>
-        <img class="hidden-version-mobile" src="images/imagesDesktop/Component 2.png" alt="simbolo menor y mayor">
-      </div>
-    </div>
-  </div>
-  <div class="numero-respuestas hidden-version-desktop">
-    <img src="images/imagesDesktop/Component 3.png" alt="componente 3">
-    <span>6 respuestas</span>
-  </div>
-  </section>
-
-
-
-  <section class="section-main">
-    <div class="add-respuesta">
-      <img src="images/imagesDesktop/Component 5.png" alt="simbolo mas">
-      <button id="add-comment">Añadir Respuesta</button>
-    </div>
-
-    <section id="ventana-comentario">
     </section>
-
-    <div class="section-respuesta">
-      <div class="container-respuesta">
-        <div class="usuario-nakima-respuesta">
-          <img class="img-perfil" src="images/imagesDesktop/Natalia-Lafourcade-2.jpg" alt="imagen de perfil">
-          <p>Nat Nakima UX UI Designer</p>
-        </div>
-        <p>Yo propongo que no vayamos, No voy a esquiar y prefiero mil veces más pasar el dia con mi gato.
-          Pero bueno que como querais, si quereis ir perfecto pero no conteis conmigo.
-          Aprovechad ahora que hay nieve
-        </p>
-        <div class="info-respuesta">
+    <section class="right-menu">
+      <section>
+        <div class="cont-pregunta">
+          <span>28/1/2020</span>
           <div>
-            <div id="contenedor">
-              <a class="miniatura" href="javascript:void(0);">
-                <img alt="" src="images/imagesDesktop/Vector-1.png" />
-                <span><img alt="" src="images/imagesDesktop/like.png" /></span>
-              </a>
+            <h3>Cuando se hara la esquiada de Nakima?</h3>
+            <div class="usuario-nakima-pregunta">
+              <img class="img-perfil" src="images/imagesDesktop/belleza-trucos-salir-guapa-fotos-848x477x80xX.jpg"
+                alt="imagen de perfil">
+              <p>Emma Nakima UX UI Designer</p>
             </div>
-            <span>2</span>
+            <p>En la retospectova de hoy se han propuesto por segunda y ultima vez hacer una esquiada con los
+              participantes
+              de
+              Nakima.breadcrumps
+              Se proponen dos opciones posibles, Andorra y Port Ainé.
+              El finde deberá ser discutido para ver cual es el finde que todos pueden.
+            </p>
           </div>
-          <div>
-            <div id="contenedor">
-              <a class="miniatura" href="javascript:void(0);">
-                <img alt="" src="images/imagesDesktop/Vector-2.png" />
-                <span><img alt="" src="images/imagesDesktop/dislike.png" /></span>
-              </a>
+          <div class="info-pregunta">
+            <div class="visualizaciones">
+              <div id="contenedor">
+                <a class="miniatura" href="javascript:void(0);">
+                  <img alt="" src="images/imagesDesktop/Component 1.png" />
+                  <span><img alt="" src="images/imagesDesktop/visualizaciones.png" /></span>
+                </a>
+              </div>
+              <span>10 Visualizaciones</span>
             </div>
-            <span>7</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-respuesta">
-      <div class="container-respuesta">
-        <div class="usuario-nakima-respuesta">
-          <img class="img-perfil" src="images/imagesDesktop/images-12.jpeg" alt="imagen de perfil">
-          <p>Pau Nakima Programer</p>
-        </div>
-        <p>Ei que tal a tots?
-          A mi em sembla be si, pero quan o voleu fer un finde?
-          Jo normalment tinc partits els disabtes pero no os preocupeu,
-          si dem l'esquiada un finde que no tingui partit compteu amb mi totalment.
-        </p>
-        <div class="info-respuesta">
-          <div>
-            <div id="contenedor">
-              <a class="miniatura" href="javascript:void(0);">
-                <img alt="" src="images/imagesDesktop/Vector-1.png" />
-                <span><img alt="" src="images/imagesDesktop/like.png" /></span>
-              </a>
+            <div class="hidden-version-mobile">
+              <img src="images/imagesDesktop/Component 3.png" alt="componente 3">
+              <span>6 respuestas</span>
             </div>
-            <span>7</span>
-          </div>
-          <div>
-            <div id="contenedor">
-              <a class="miniatura" href="javascript:void(0);">
-                <img alt="" src="images/imagesDesktop/Vector-2.png" />
-                <span><img alt="" src="images/imagesDesktop/dislike.png" /></span>
-              </a>
+            <div>
+              <div id="contenedor">
+                <a class="miniatura" href="javascript:void(0);">
+                  <img alt="" src="images/imagesDesktop/Vector-1.png" />
+                  <span><img alt="" src="images/imagesDesktop/like.png" /></span>
+                </a>
+              </div>
+              <span>32</span>
             </div>
-            <span>0</span>
+            <div>
+              <div id="contenedor">
+                <a class="miniatura" href="javascript:void(0);">
+                  <img alt="" src="images/imagesDesktop/Vector-2.png" />
+                  <span><img alt="" src="images/imagesDesktop/dislike.png" /></span>
+                </a>
+              </div>
+              <span>10</span>
+            </div>
+            <div class="numero-pages">
+              <span class="pages-pregunta">1</span>
+              <span>/5</span>
+              <img class="hidden-version-mobile" src="images/imagesDesktop/Component 2.png" alt="simbolo menor y mayor">
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="section-respuesta">
-      <div class="container-respuesta">
-        <div class="usuario-nakima-respuesta">
-          <img class="img-perfil"
-            src="images/imagesDesktop/quim-gutierrez-la-discreta-vida-privada-del-galan-desconocido.jpg"
-            alt="imagen de perfil">
-          <p>Quim Nakima Programer</p>
+        <div class="numero-respuestas hidden-version-desktop">
+          <img src="images/imagesDesktop/Component 3.png" alt="componente 3">
+          <span>6 respuestas</span>
         </div>
-        <p>Bueno... si, jo no se si podré venir pero ja direu i miro que tal em va.
-          Segurament haure de dir-ho mes endevant.
-          Peró que voleu anar a Andorra, poder seria millor anar a Vic.
-        </p>
-        <div class="info-respuesta">
-          <div>
-            <div id="contenedor">
-              <a class="miniatura" href="javascript:void(0);">
-                <img alt="" src="images/imagesDesktop/Vector-1.png" />
-                <span><img alt="" src="images/imagesDesktop/like.png" /></span>
-              </a>
-            </div>
-            <span>3</span>
-          </div>
-          <div>
-            <div id="contenedor">
-              <a class="miniatura" href="javascript:void(0);">
-                <img alt="" src="images/imagesDesktop/Vector-2.png" />
-                <span><img alt="" src="images/imagesDesktop/dislike.png" /></span>
-              </a>
-            </div>
-            <span>1</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
 
 
-  <footer>
+      <section class="section-main">
+        <div class="add-respuesta">
+          <img src="images/imagesDesktop/Component 5.png" alt="simbolo mas">
+          <button id="add-comment">Añadir Respuesta</button>
+        </div>
+
+        <section id="ventana-comentario">
+        </section>
+
+        <div class="section-respuesta">
+          <div class="container-respuesta">
+            <div class="usuario-nakima-respuesta">
+              <img class="img-perfil" src="images/imagesDesktop/Natalia-Lafourcade-2.jpg" alt="imagen de perfil">
+              <p>Nat Nakima UX UI Designer</p>
+            </div>
+            <p>Yo propongo que no vayamos, No voy a esquiar y prefiero mil veces más pasar el dia con mi gato.
+              Pero bueno que como querais, si quereis ir perfecto pero no conteis conmigo.
+              Aprovechad ahora que hay nieve
+            </p>
+            <div class="info-respuesta">
+              <div>
+                <div id="contenedor">
+                  <a class="miniatura" href="javascript:void(0);">
+                    <img alt="" src="images/imagesDesktop/Vector-1.png" />
+                    <span><img alt="" src="images/imagesDesktop/like.png" /></span>
+                  </a>
+                </div>
+                <span>2</span>
+              </div>
+              <div>
+                <div id="contenedor">
+                  <a class="miniatura" href="javascript:void(0);">
+                    <img alt="" src="images/imagesDesktop/Vector-2.png" />
+                    <span><img alt="" src="images/imagesDesktop/dislike.png" /></span>
+                  </a>
+                </div>
+                <span>7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-respuesta">
+          <div class="container-respuesta">
+            <div class="usuario-nakima-respuesta">
+              <img class="img-perfil" src="images/imagesDesktop/images-12.jpeg" alt="imagen de perfil">
+              <p>Pau Nakima Programer</p>
+            </div>
+            <p>Ei que tal a tots?
+              A mi em sembla be si, pero quan o voleu fer un finde?
+              Jo normalment tinc partits els disabtes pero no os preocupeu,
+              si dem l'esquiada un finde que no tingui partit compteu amb mi totalment.
+            </p>
+            <div class="info-respuesta">
+              <div>
+                <div id="contenedor">
+                  <a class="miniatura" href="javascript:void(0);">
+                    <img alt="" src="images/imagesDesktop/Vector-1.png" />
+                    <span><img alt="" src="images/imagesDesktop/like.png" /></span>
+                  </a>
+                </div>
+                <span>7</span>
+              </div>
+              <div>
+                <div id="contenedor">
+                  <a class="miniatura" href="javascript:void(0);">
+                    <img alt="" src="images/imagesDesktop/Vector-2.png" />
+                    <span><img alt="" src="images/imagesDesktop/dislike.png" /></span>
+                  </a>
+                </div>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-respuesta">
+          <div class="container-respuesta">
+            <div class="usuario-nakima-respuesta">
+              <img class="img-perfil"
+                src="images/imagesDesktop/quim-gutierrez-la-discreta-vida-privada-del-galan-desconocido.jpg"
+                alt="imagen de perfil">
+              <p>Quim Nakima Programer</p>
+            </div>
+            <p>Bueno... si, jo no se si podré venir pero ja direu i miro que tal em va.
+              Segurament haure de dir-ho mes endevant.
+              Peró que voleu anar a Andorra, poder seria millor anar a Vic.
+            </p>
+            <div class="info-respuesta">
+              <div>
+                <div id="contenedor">
+                  <a class="miniatura" href="javascript:void(0);">
+                    <img alt="" src="images/imagesDesktop/Vector-1.png" />
+                    <span><img alt="" src="images/imagesDesktop/like.png" /></span>
+                  </a>
+                </div>
+                <span>3</span>
+              </div>
+              <div>
+                <div id="contenedor">
+                  <a class="miniatura" href="javascript:void(0);">
+                    <img alt="" src="images/imagesDesktop/Vector-2.png" />
+                    <span><img alt="" src="images/imagesDesktop/dislike.png" /></span>
+                  </a>
+                </div>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+
+  <footer class="container-final">
     <div class="section-footer">
       <div class="cont-footer">
         <span>TEMAS LEGALES</span>
@@ -256,7 +284,7 @@
     </div>
     <div class="cont-copyright">
       <img class="img-copyright" src="images/imagesDesktop/image 3.png" alt="icon nakima">
-      <span>2020 Nakima Barcelona S.L </span>
+      <span> 2020 Nakima Barcelona S.L </span>
     </div>
   </footer>
 
@@ -266,6 +294,13 @@
 </body>
 <!-- <script src="scripts/nav.js"></script> -->
 <script src="scripts/comments.js"></script>
+<script src="scripts/dropDown.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 </html>

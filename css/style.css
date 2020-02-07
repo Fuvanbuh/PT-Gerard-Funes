@@ -19,21 +19,12 @@
 	align-items: center;
 }
 
-.img-burguer{
-	width: 30px;
-	height: auto;
-	background-color: #C6DDE3;
-	box-shadow: none;
-}
-
 .img-nakima-icon{
 	width: 40%;
 	height: auto;
 	box-shadow: none;
 	margin:auto;
 }
-
-
 
 .breadcrumps{
   margin-top: 5px;
@@ -66,11 +57,38 @@
 }
 
 @media (min-width: 730px){
+  .menu{
+    padding:0px
+  }
+  .img-nakima-icon{
+    width: 13%;
+    margin:0px;
+  }
+  .header-desktop{
+  width: 100%;
+  }
+  .header-desktop ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #C6DDE3;
+    margin: 0px;
+    font-family: 'Roboto', 'Medium';
+    font-size: 16px;
+
+  }
+
+  .header-desktop ul li {
+    background-color: #C6DDE3;
+  }
+  
+
 
   .breadcrumps{
     margin-top: 10px;
     margin-bottom: 25px;
     padding: 25px;
+    
   }
   .breadcrupms :first-child{
     margin-left: 50px;
@@ -85,6 +103,8 @@
   }
   
 }
+
+
 
 
 
@@ -119,7 +139,7 @@
   flex-direction: row;
   align-items: center;
   margin: 2px;
-  
+  align-items: end;
   font-size: 13px;
 }
 
@@ -136,10 +156,11 @@
   margin-right: 10px;
   border-radius: 200px;
   justify-content: flex-start;
+  
 
 }
 .usuario-nakima-pregunta p{
-  font-family: 'Roboto', light;
+  font-family: 'Roboto', 'light';
   font-style: italic;
 }
 
@@ -191,9 +212,89 @@
 
 
 @media (min-width: 730px ) {
+  .container-main{
+    display: flex;
+    flex-direction: row;
+  }
+  .left-menu{
+    width: 20%;
+    position: absolute;
+    left: 5%;
+  }
+  .left-menu div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #D1D1D1;
+    padding: 40px;
+    padding-bottom: 20px;
+  }
+  .left-menu div:hover {
+    box-shadow: 1px 2px 11px rgba(200, 200, 200, 0.34);
+    background-color: #FFFFFF;
+  }
+  .left-menu div span {
+    font-family: 'Roboto', 'Regular';
+    font-size: 16px;
+  }
+  .left-menu div img {
+    width: 12px;
+    height: 12px;
+  }
+
+  
+
+  .dropdown-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px !important;
+    width: 100%;
+    box-shadow: 1px 2px 11px rgba(200, 200, 200, 0.34);
+    display: none;
+  }
+  .dropdown-content a{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .dropdown-content a:hover{
+    background-color: #EBEBEB;
+  }
+  
+  .container-calendario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    border: 0.5px solid #D1D1D1;
+    padding: 0px !important;
+    padding-bottom: 20px !important;
+  }
+  .container-degradado{
+    font-family: 'Roboto', 'Regular';
+    color: #FFFFFF;
+    font-size: 16px;
+    background: linear-gradient(90deg, #C6DDE3 0%, rgba(7, 100, 124, 0.5) 100%);
+    padding: 25px;
+  }
+  .evento{
+    font-family: 'Roboto', 'Regular';
+    font-size: 14px;
+    padding: 25px;
+  }
+  .evento-off{
+    font-family: 'Roboto', 'Ligth';
+    font-style: italic;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #EBEBEB;
+  }
+  
+  .right-menu{
+    margin-left: 200px;
+  }
+
   .cont-pregunta{
     width: 45%;
-    
   }
   .cont-pregunta span {
     font-size: 16px;
@@ -204,6 +305,7 @@
   .usuario-nakima-pregunta {
     font-size: 16px;
     margin: 15px 0;
+    align-items: end;
   }
   .cont-pregunta div p {
     font-size: 17px;
@@ -214,6 +316,10 @@
     font-size: 12px;
     border-top: 0.5px solid black; 
     padding-top: 20px;
+  }
+  .vistas-desktop{
+    display: flex;
+    flex-direction: row;
   }
     .info-pregunta div span{
     font-size: 12px;
@@ -317,6 +423,7 @@
   align-items: center;
   margin: 2px;
   font-size: 13px;
+  align-items: end;
 }
 
 .usuario-nakima-respuesta p {
@@ -360,6 +467,9 @@
     font-size: 20px;
     color: rgb(196, 235, 245);
   }
+  .section-main{
+    margin-top: 30px;
+  }
   
   .section-respuesta {
     padding:15px;
@@ -384,7 +494,7 @@
     width: 40%;
     border:  1px solid #F4F4F4;
     position: absolute;
-    left: 30%;
+    left: 38%;
     background-color:#FFFFFF;
   }
 
@@ -483,6 +593,7 @@ footer{
 
 
 @media (min-width: 730px ) {
+  
 
   footer{
     font-size: 16px;
@@ -578,10 +689,6 @@ footer{
   overflow:visible;
   z-index: 1002;
   }
-
-
-
-
 
 
 
