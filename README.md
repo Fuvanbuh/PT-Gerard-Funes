@@ -22,8 +22,10 @@ Mas similitud con el prototipo.
 Html 
 Css 
 
-##Referencias
+## Referencias
+
 Nav-bar version Mobile
+
 https://www.cssscript.com/basic-hamburger-toggle-menu-css-vanilla-javascript/)
 
 
@@ -36,6 +38,8 @@ URls for the project repo
 ## Funciones
 
 Funcion para manipular el Dom
+
   -Mostrar ventana par añadir comentario
+  
   -Esconder ventana para añadir comentario
   
