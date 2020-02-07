@@ -33,7 +33,7 @@ URls for the project repo
 
 
 
-##Funciones
+## Funciones
 
 Funcion para manipular el Dom
   -Mostrar ventana par añadir comentario
